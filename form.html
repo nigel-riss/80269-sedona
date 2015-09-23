@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <header class="page-header page-header--form-page">
+    <header class="page-header page-header--inner-page">
         <img class="page-header__logo" src="" alt="">
         <h1 class="page-header__caption">Sedona</h1>
 
@@ -76,31 +76,117 @@
 
             <fieldset>
                 <legend>Даты вашей поездки</legend>
-                
+
                 <label>
                     Дата приезда: <span>*</span>
-                </label><br>
+                </label>
+                <br>
                 <input type="date">
                 <br>
+
                 <label for="">
                     Длительность пребывания: <span>*</span>
-                </label><br>
-                
+                </label>
+                <br>
+                <span>-</span>
+                <input type="number" value="14" min="1">
+                <span>+</span>
+                <br>
+
                 <label for="">
                     Дата отъезда: <span>*</span>
-                </label><br>
+                </label>
+                <br>
+                <input type="date">
             </fieldset>
 
             <fieldset>
                 <legend>Кол-во путешественников:</legend>
+                
+                <label for="">Количество путешественников:</label>
+                <br>
+                <span>-</span>
+                <input type="number">
+                <span>+</span>
+                <br>
+                
+                <div>
+                    <span>№</span><span>1</span>
+                    <label for="">
+                        Фамилия: <span>*</span>
+                    </label>
+                    <br>
+                    <input type="text" placeholder="Иванов">
+                    <br>
+                    
+                    <label for="">
+                        Имя: <span>*</span>
+                    </label>
+                    <br>
+                    <input type="text" placeholder="Пётр">
+                    <br>
+                    
+                    <label for="">
+                        Отчество:
+                    </label>
+                    <br>
+                    <input type="text" placeholder="Александрович">
+                    <br>
+                </div>
+                
+                <div>
+                    <span>№</span><span>2</span>
+                    <label for="">
+                        Фамилия: <span>*</span>
+                    </label>
+                    <br>
+                    <input type="text" placeholder="Иванов">
+                    <br>
+                    
+                    <label for="">
+                        Имя: <span>*</span>
+                    </label>
+                    <br>
+                    <input type="text" placeholder="Пётр">
+                    <br>
+                    
+                    <label for="">
+                        Отчество:
+                    </label>
+                    <br>
+                    <input type="text" placeholder="Александрович">
+                    <br>
+                </div>
             </fieldset>
 
             <fieldset>
                 <legend>Посещенные достопримечательности:</legend>
+                
+                <input type="checkbox" checked>
+                <label for="">Мост дьявола</label>
+                <br>
+                
+                <input type="checkbox">
+                <label for="">Слайд-парк</label>
+                <br>
+                
+                <input type="checkbox" checked>
+                <label for="">Гора-Колокол</label>
+                <br>
+                
+                <input type="checkbox" checked>
+                <label for="">Красные скалы</label>
+                <br>
             </fieldset>
 
             <fieldset>
                 <legend>Загрузите фотографии:</legend>
+                
+                <span>Выбрать фотографии</span>
+                
+                <div></div>
+                
+                <button type="submit">Отправить отзыв</button>
             </fieldset>
         </form>
     </main>
