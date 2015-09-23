@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Academy: sedona</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+
+<body>
+    <header class="page-header page-header--form-page">
+        <img class="page-header__logo" src="" alt="">
+        <h1 class="page-header__caption">Sedona</h1>
+
+        <nav class="main-menu">
+            <ul class="main-menu__list">
+                <li class="main-menu__item">
+                    <a class="main-menu__item-link" href="">Карта штата</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__item-link" href="">Информация</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__item-link" href="">Фото и видео</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__item-link" href="">Гостиницы</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <section class="slogan">
+            <h2 class="slogan__caption">Оставте свой отзыв</h2>
+            <p class="slogan__text">Помогите нашим отелям стать лучше! Оставте свой отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </section>
+
+        <form class="feedback-form" action="">
+            <fieldset>
+                <legend>Представтесь, пожалуйста:</legend>
+
+                <label>
+                    Фамилия: <span>*</span>
+                </label>
+                <input type="text" placeholder="Иванов">
+                <br>
+                <label>
+                    Имя: <span>*</span>
+                </label>
+                <br>
+                <input type="text" placeholder="Петр">
+                <br>
+                <label>
+                    Отчество:
+                </label>
+                <br>
+                <input type="text" placeholder="Александрович">
+            </fieldset>
+
+            <fieldset>
+                <legend>Ваше общее впечатление:</legend>
+
+                <input type="radio" checked>
+                <label>
+                    Скорее положительное
+                </label>
+                <br>
+                <input type="radio">
+                <label for="">
+                    Скорее отрицательное
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Даты вашей поездки</legend>
+                
+                <label>
+                    Дата приезда: <span>*</span>
+                </label><br>
+                <input type="date">
+                <br>
+                <label for="">
+                    Длительность пребывания: <span>*</span>
+                </label><br>
+                
+                <label for="">
+                    Дата отъезда: <span>*</span>
+                </label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Кол-во путешественников:</legend>
+            </fieldset>
+
+            <fieldset>
+                <legend>Посещенные достопримечательности:</legend>
+            </fieldset>
+
+            <fieldset>
+                <legend>Загрузите фотографии:</legend>
+            </fieldset>
+        </form>
+    </main>
+
+
+
+    <footer class="page-footer">
+        <div class="page-footer__hashtag">
+            #visitsedona
+        </div>
+
+        <div class="social">
+            <a class="social__button" href="">Наш твиттер</a>
+            <a class="social__button" href="">Мы на фейсбуке</a>
+            <a class="social__button" href="">Мы на ютубе</a>
+        </div>
+
+        <div class="copyrights">
+            Разработано <span class="copyrights__logo">htmlacademy</span>
+        </div>
+    </footer>
+</body>
+
+</html>
