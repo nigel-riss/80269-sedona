@@ -9,9 +9,6 @@
 
 <body>
     <header class="page-header page-header--inner-page">
-        <img class="page-header__logo" src="" alt="">
-        <h1 class="page-header__caption">Sedona</h1>
-
         <nav class="main-menu">
             <ul class="main-menu__list">
                 <li class="main-menu__item">
@@ -28,6 +25,10 @@
                 </li>
             </ul>
         </nav>
+
+        <div class="page-header__menu-button"></div>
+        <img class="page-header__logo" src="" alt="">
+        <h1 class="page-header__caption">Sedona</h1>
     </header>
 
 
@@ -39,150 +40,150 @@
         </section>
 
         <form class="feedback-form" action="">
-            <fieldset>
-                <legend>Представтесь, пожалуйста:</legend>
+            <fieldset class="feedback-form__fieldset">
+                <legend class="feedback-form__fieldset-legend">Представтесь, пожалуйста:</legend>
 
-                <label>
+                <label class="feedback-form__label">
                     Фамилия: <span>*</span>
                 </label>
-                <input type="text" placeholder="Иванов">
+                <input class="feedback-form__text-field" type="text" placeholder="Иванов" required>
                 <br>
-                <label>
+                <label class="feedback-form__label">
                     Имя: <span>*</span>
                 </label>
                 <br>
-                <input type="text" placeholder="Петр">
+                <input class="feedback-form__text-field" type="text" placeholder="Петр" required>
                 <br>
-                <label>
+                <label class="feedback-form__label">
                     Отчество:
                 </label>
                 <br>
-                <input type="text" placeholder="Александрович">
+                <input class="feedback-form__text-field" type="text" placeholder="Александрович">
             </fieldset>
 
-            <fieldset>
-                <legend>Ваше общее впечатление:</legend>
+            <fieldset class="feedback-form__fieldset">
+                <legend class="feedback-form__fieldset-legend">Ваше общее впечатление:</legend>
 
-                <input type="radio" checked>
-                <label>
+                <input class="feedback-form__radio" type="radio" checked>
+                <label class="feedback-form__label">
                     Скорее положительное
                 </label>
                 <br>
-                <input type="radio">
-                <label for="">
+                <input class="feedback-form__radio" type="radio">
+                <label class="feedback-form__label" for="">
                     Скорее отрицательное
                 </label>
             </fieldset>
 
-            <fieldset>
-                <legend>Даты вашей поездки</legend>
+            <fieldset class="feedback-form__fieldset">
+                <legend class="feedback-form__fieldset-legend">Даты вашей поездки</legend>
 
-                <label>
+                <label class="feedback-form__label">
                     Дата приезда: <span>*</span>
                 </label>
                 <br>
-                <input type="date">
+                <input class="feedback-form__" type="date">
                 <br>
 
-                <label for="">
+                <label class="feedback-form__label" for="">
                     Длительность пребывания: <span>*</span>
                 </label>
                 <br>
-                <span>-</span>
-                <input type="number" value="14" min="1">
-                <span>+</span>
+                <span class="feedback-form__">-</span>
+                <input class="feedback-form__" type="number" value="14" min="1">
+                <span class="feedback-form__">+</span>
                 <br>
 
-                <label for="">
+                <label class="feedback-form__label" for="">
                     Дата отъезда: <span>*</span>
                 </label>
                 <br>
-                <input type="date">
+                <input class="feedback-form__" type="date">
             </fieldset>
 
-            <fieldset>
-                <legend>Кол-во путешественников:</legend>
+            <fieldset class="feedback-form__fieldset">
+                <legend class="feedback-form__fieldset-legend">Кол-во путешественников:</legend>
                 
-                <label for="">Количество путешественников:</label>
+                <label class="feedback-form__label" for="">Количество путешественников:</label>
                 <br>
-                <span>-</span>
-                <input type="number">
-                <span>+</span>
+                <span class="feedback-form__">-</span>
+                <input class="feedback-form__" type="number">
+                <span class="feedback-form__">+</span>
                 <br>
                 
                 <div>
                     <span>№</span><span>1</span>
-                    <label for="">
+                    <label class="feedback-form__label" for="">
                         Фамилия: <span>*</span>
                     </label>
                     <br>
-                    <input type="text" placeholder="Иванов">
+                    <input class="feedback-form__text-field" type="text" placeholder="Иванов">
                     <br>
                     
-                    <label for="">
+                    <label class="feedback-form__label" for="">
                         Имя: <span>*</span>
                     </label>
                     <br>
-                    <input type="text" placeholder="Пётр">
+                    <input class="feedback-form__text-field" type="text" placeholder="Пётр">
                     <br>
                     
-                    <label for="">
+                    <label class="feedback-form__label" for="">
                         Отчество:
                     </label>
                     <br>
-                    <input type="text" placeholder="Александрович">
+                    <input class="feedback-form__text-field" type="text" placeholder="Александрович">
                     <br>
                 </div>
                 
                 <div>
                     <span>№</span><span>2</span>
-                    <label for="">
+                    <label class="feedback-form__label" for="">
                         Фамилия: <span>*</span>
                     </label>
                     <br>
-                    <input type="text" placeholder="Иванов">
+                    <input class="feedback-form__text-field" type="text" placeholder="Иванов">
                     <br>
                     
-                    <label for="">
+                    <label class="feedback-form__label" for="">
                         Имя: <span>*</span>
                     </label>
                     <br>
-                    <input type="text" placeholder="Пётр">
+                    <input class="feedback-form__text-field" type="text" placeholder="Пётр">
                     <br>
                     
-                    <label for="">
+                    <label class="feedback-form__label" for="">
                         Отчество:
                     </label>
                     <br>
-                    <input type="text" placeholder="Александрович">
+                    <input class="feedback-form__text-field" type="text" placeholder="Александрович">
                     <br>
                 </div>
             </fieldset>
 
-            <fieldset>
-                <legend>Посещенные достопримечательности:</legend>
+            <fieldset class="feedback-form__fieldset">
+                <legend class="feedback-form__fieldset-legend">Посещенные достопримечательности:</legend>
                 
-                <input type="checkbox" checked>
-                <label for="">Мост дьявола</label>
+                <input class="feedback-form__checkbox" type="checkbox" checked>
+                <label class="feedback-form__label" for="">Мост дьявола</label>
                 <br>
                 
-                <input type="checkbox">
-                <label for="">Слайд-парк</label>
+                <input class="feedback-form__checkbox" type="checkbox">
+                <label class="feedback-form__label" for="">Слайд-парк</label>
                 <br>
                 
-                <input type="checkbox" checked>
-                <label for="">Гора-Колокол</label>
+                <input class="feedback-form__checkbox" type="checkbox" checked>
+                <label class="feedback-form__label" for="">Гора-Колокол</label>
                 <br>
                 
-                <input type="checkbox" checked>
-                <label for="">Красные скалы</label>
+                <input class="feedback-form__checkbox" type="checkbox" checked>
+                <label class="feedback-form__label" for="">Красные скалы</label>
                 <br>
             </fieldset>
 
-            <fieldset>
-                <legend>Загрузите фотографии:</legend>
+            <fieldset class="feedback-form__fieldset">
+                <legend class="feedback-form__fieldset-legend">Загрузите фотографии:</legend>
                 
-                <span>Выбрать фотографии</span>
+                <span class="feedback-form__">Выбрать фотографии</span>
                 
                 <div></div>
                 
