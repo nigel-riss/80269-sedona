@@ -9,8 +9,9 @@ $colorLightBlue: #9ac2db;
 html,
 body {
     /*block model*/
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    max-width: 320px;
     
     /*typography*/
     font-family: $font;
@@ -76,6 +77,7 @@ body {
         linear-gradient(#fff 0px, #fff 56px, transparent 56px),
         url(../img/hero-back.jpg);
     background-position: 0 0, center 54px;
+    background-repeat: no-repeat;
     
     &::before,
     &::after {
