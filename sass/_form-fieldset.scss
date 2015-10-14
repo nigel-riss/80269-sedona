@@ -1,0 +1,26 @@
+.form-fieldset {
+    // positioning
+    position: relative;
+    
+    // block model
+    border: none;
+    border-top: 1px solid $formFieldsetOutline;
+    padding: 20px;
+    padding-top: 70px;
+    
+    &__legend {
+        // positioning
+        position: absolute;
+        top: 20px;
+        left: 0;
+        
+        // block model
+        display: block;
+        width: 100%;
+        
+        // typography
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+    }
+}

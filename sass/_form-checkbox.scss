@@ -1,0 +1,15 @@
+.form-checkbox {
+    // block model
+    display: none;
+    
+    &:checked + .form-label::after{
+        border-bottom: 4px solid $formSelectorColor;
+        border-left: 4px solid $formSelectorColor;
+        transform: rotate(-45deg);
+    }
+    
+    &:checked + .form-label:active::after{
+        border-bottom: 4px solid $formSelectorDownBack;
+        border-left: 4px solid $formSelectorDownBack;
+    }
+}

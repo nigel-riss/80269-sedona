@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Academy: sedona</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="page-header">
+        <nav class="main-menu">
+            <ul class="main-menu__list">
+                <li class="main-menu__item">
+                    <a class="main-menu__item-link  main-menu__item-link--first" href="">Карта штата</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__item-link" href="">Информация</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__item-link" href="">Фото и видео</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__item-link  main-menu__item-link--last" href="">Гостиницы</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="hero hero--inner-page">
+            <div class="hero__menu-button"></div>
+            <img class="hero__logo" src="img/logo.png" alt="">
+            <h1 class="hero__caption">Sedona</h1>
+        </div>
+    </header>
+
+
+
+    <main>
+        <section class="slogan">
+            <h2 class="slogan__caption">Оставте свой отзыв</h2>
+            <p class="slogan__text">Помогите нашим отелям стать лучше! Оставте свой отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </section>
+
+        <form class="feedback-form" action="">
+            <fieldset class="form-fieldset">
+                <legend class="form-fieldset__legend">Представтесь, пожалуйста:</legend>
+
+                <label class="form-label" for="family-name">
+                    Фамилия: <span>*</span>
+                </label>
+                <input class="form-text-field" id="family-name" type="text" name="family-name" placeholder="Иванов" required>
+                
+                <label class="form-label" for="first-name">
+                    Имя: <span>*</span>
+                </label>
+                <input class="form-text-field" id="first-name" type="text" name="first-name" placeholder="Петр" required>
+                
+                <label class="form-label" for="second-name">
+                    Отчество:
+                </label>
+                <input class="form-text-field" id="second-name" type="text" name="second-name" placeholder="Александрович">
+            </fieldset>
+
+            <fieldset class="form-fieldset">
+                <legend class="form-fieldset__legend">Ваше общее впечатление:</legend>
+
+                <input class="form-radio" id="good-impression" type="radio" name="impression" checked>
+                <label class="form-label  form-label--radio" for="good-impression">
+                    Скорее положительное
+                </label>
+
+                <input class="form-radio" id="bad-impression" type="radio" name="impression">
+                <label class="form-label  form-label--radio" for="bad-impression">
+                    Скорее отрицательное
+                </label>
+            </fieldset>
+
+            <fieldset class="form-fieldset">
+                <legend class="form-fieldset__legend">Даты вашей поездки</legend>
+
+                <label class="form-label" for="arrival-date">
+                    Дата приезда: <span>*</span>
+                </label>
+                <input class="form-date-field" id="arrival-date" type="date">
+
+                <label class="form-label" for="trip-length">
+                    Длительность пребывания: <span>*</span>
+                </label>
+                <div class="form-num-selector">
+                    <span class="form-num-selector__substract">-</span>
+                    <input class="form-num-selector__number-field" id="trip-length" type="number" value="14" min="1">
+                    <span class="form-num-selector__add">+</span>
+                </div>
+
+                <label class="form-label" for="leaving-date">
+                    Дата отъезда: <span>*</span>
+                </label>
+                <input class="form-date-field" id="leaving-date" type="date">
+            </fieldset>
+
+            <fieldset class="form-fieldset">
+                <legend class="form-fieldset__legend">Кол-во путешественников:</legend>
+
+                <label class="form-label" for="traveler-number">Количество путешественников:</label>
+                <div class="form-num-selector">
+                    <span class="form-num-selector__substract">-</span>
+                    <input class="form-num-selector__number-field" id="traveler-number" type="number" value="2">
+                    <span class="form-num-selector__add">+</span>
+                </div>
+
+                <div class="form-traveler-group">
+                    <div class="form-traveler-group__counter">
+                        <span>№</span><span>1</span>
+                    </div>
+                    
+                    <div class="form-traveler-group__traveler">
+                        <label class="form-label" for="visitor-1-family-name">
+                            Фамилия: <span>*</span>
+                        </label>
+                        <input class="form-text-field" id="visitor-1-family-name" type="text" placeholder="Иванов">
+                        
+                        <label class="form-label" for="visitor-1-first-name">
+                            Имя: <span>*</span>
+                        </label>
+                        <input class="form-text-field" id="visitor-1-first-name" type="text" placeholder="Пётр">
+                        
+                        <label class="form-label" for="visitor-1-second-name">
+                            Отчество:
+                        </label>
+                        <input class="form-text-field" id="visitor-1-second-name" type="text" placeholder="Александрович">
+                    </div>
+                </div>
+
+                <div class="form-traveler-group">
+                    <div class="form-traveler-group__counter">
+                        <span>№</span><span>2</span>
+                    </div>
+                    
+                    <div class="form-traveler-group__traveler">
+                        <label class="form-label" for="visitor-2-family-name">
+                            Фамилия: <span>*</span>
+                        </label>
+                        <input class="form-text-field" id="visitor-2-family-name" type="text" placeholder="Иванов">
+                        
+                        <label class="form-label" for="visitor-2-first-name">
+                            Имя: <span>*</span>
+                        </label>
+                        <input class="form-text-field" id="visitor-2-first-name" type="text" placeholder="Пётр">
+                        
+                        <label class="form-label" for="visitor-2-second-name">
+                            Отчество:
+                        </label>
+                        <input class="form-text-field" id="visitor-2-second-name" type="text" placeholder="Александрович">
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-fieldset">
+                <legend class="form-fieldset__legend">Посещенные достопримечательности:</legend>
+
+                <input class="form-checkbox" id="devils-bridge" type="checkbox" checked>
+                <label class="form-label  form-label--checkbox" for="devils-bridge">Мост дьявола</label>
+
+                <input class="form-checkbox" id="slide-park" type="checkbox">
+                <label class="form-label  form-label--checkbox" for="slide-park">Слайд-парк</label>
+
+                <input class="form-checkbox" id="bell-mountain" type="checkbox" checked>
+                <label class="form-label  form-label--checkbox" for="bell-mountain">Гора-Колокол</label>
+
+                <input class="form-checkbox" id="red-rock" type="checkbox" checked>
+                <label class="form-label  form-label--checkbox" for="red-rock">Красные скалы</label>
+            </fieldset>
+
+            <fieldset class="form-fieldset">
+                <legend class="form-fieldset__legend">Загрузите фотографии:</legend>
+
+                <div class="form-grey-button">Выбрать фотографии</div>
+
+                <div class="form-gallery">
+                    <img class="form-gallery__image" src="img/small-pics/1.jpg" alt="">
+                    <img class="form-gallery__image" src="img/small-pics/2.jpg" alt="">
+                    <img class="form-gallery__image" src="img/small-pics/3.jpg" alt="">
+                    <img class="form-gallery__image" src="img/small-pics/4.jpg" alt="">
+                    <img class="form-gallery__image" src="img/small-pics/5.jpg" alt="">
+                    <img class="form-gallery__image" src="img/small-pics/6.jpg" alt="">
+                    <img class="form-gallery__image" src="img/small-pics/7.jpg" alt="">
+                </div>
+
+                <button class="form-blue-button" type="submit">Отправить отзыв</button>
+            </fieldset>
+        </form>
+    </main>
+
+
+
+    <footer class="page-footer">
+        <div class="page-footer__hashtag">
+            &#35;visitsedona
+        </div>
+
+        <div class="social">
+            <a class="social__button social__button--twitter" href="">Наш твиттер</a>
+            <a class="social__button social__button--facebook" href="">Мы на фейсбуке</a>
+            <a class="social__button social__button--youtube" href="">Мы на ютубе</a>
+        </div>
+    </footer>
+</body>
+
+</html>
