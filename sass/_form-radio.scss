@@ -1,0 +1,12 @@
+.form-radio {
+    // block model
+    display: none;
+    
+    &:checked + .form-label::before{
+        background-color: $formSelectorColor;
+    }
+    
+    &:checked + .form-label:active::before{
+        background-color: $formSelectorDownBack;
+    }
+}

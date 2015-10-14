@@ -1,0 +1,58 @@
+.hero {
+    /*positioning*/
+    position: relative;
+    text-align: center;
+    
+    /*block model*/
+    height: 447px;
+    width: 100%;
+    
+    /*visual*/
+    background-image: 
+        linear-gradient(#fff 0px, #fff 56px, transparent 56px),
+        url(../img/hero-back.jpg);
+    background-position: 0 0, center 54px;
+    background-repeat: no-repeat;
+    
+    &--inner-page {
+        // block model
+        height: 214px;
+        
+        // visual
+        background-image: 
+        linear-gradient(#fff 0px, #fff 56px, transparent 56px),
+        url(../img/hero-back-inner.jpg);
+        background-position: 0;
+    }
+    
+    &::before,
+    &::after {
+        content: "";
+        /*positioning*/
+        position: absolute;
+        bottom: 0;
+        
+        /*block model*/
+        display: block;
+        width: 50%;
+        height: 8.75%;
+    }
+    
+    &::before {
+        left: 0;
+        
+        /*visual*/
+        background-image: linear-gradient(to bottom left, transparent 0, transparent 50%, #ffffff 50%, #ffffff);
+    }
+    
+    &::after {
+        right: 0;
+                
+        /*visual*/
+        background-image: linear-gradient(to bottom right, transparent 0, transparent 50%, #ffffff 50%, #ffffff)
+    }
+    
+    &__caption {
+        display: none;
+    }
+}

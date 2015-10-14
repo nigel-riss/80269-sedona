@@ -1,0 +1,85 @@
+.form-num-selector {
+    // block model
+    display: block;
+    //width: calc(100% - 40px);
+    font-size: 0;
+    
+    &__substract {
+        @include formInputStyles;
+        @include numSelectorButton;
+        
+        // positioning
+        position: relative;
+        
+        // block model
+        margin-right: 6px;
+        
+        &::before {
+            content: '';
+            
+            // positioning
+            position: absolute;
+            top: 27px;
+            left: 21px;
+            
+            // block model
+            height: 4px;
+            width: 20px;
+            
+            // visual
+            background-color: $formFieldOutline;
+        }
+    }
+    
+    &__add {
+        @include formInputStyles;
+        @include numSelectorButton;
+        
+        // positioning
+        position: relative;
+        
+        // block model
+        margin-left: 6px;
+        
+        &::before {
+            content: '';
+            
+            // positioning
+            position: absolute;
+            top: 27px;
+            left: 21px;
+            
+            // block model
+            height: 4px;
+            width: 20px;
+            
+            // visual
+            background-color: $formFieldOutline;
+        }
+        
+        &::after {
+            content: '';
+            
+            // positioning
+            position: absolute;
+            top: 19px;
+            left: 29px;
+            
+            // block model
+            height: 20px;
+            width: 4px;
+            
+            // visual
+            background-color: $formFieldOutline;
+        }
+    }
+    
+    &__number-field {
+        @include formInputStyles;
+
+        // block model
+        width: 140px;
+        display: inline-block;
+        margin: 0;
+    }
+}

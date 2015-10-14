@@ -1,0 +1,79 @@
+@mixin formLabelInline {
+    // positioning
+    position: relative;
+    
+    // block model
+    display: block;
+    width: 100%;
+    padding: 0;
+    padding-left: 80px;
+    
+    // typography
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: none;
+}
+
+@mixin formSelectorPseudoStyles {
+    display: inline-block;
+    vertical-align: middle;
+    height: 56px;
+    width: 56px;
+}
+
+@mixin formSelectorStyles {
+    &:hover::before {
+        background-color: $formFieldsetOutline;
+        border-color: $formFieldsetOutline;
+    }
+
+    &:active::before {
+        background-color: $formSelectorDownBorder;
+        border-color: $formSelectorDownBorder;
+    }
+}
+
+@mixin formInputStyles {
+    // block model
+    border: none;
+    box-sizing: border-box;
+    display: block;
+    padding: 0 20px;
+    width: 100%;
+    
+    // typography
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 58px;
+    
+    // visual
+    background-color: $formFieldBackground;
+    
+    &:hover {
+        // visual
+        background-color: $formFieldsetOutline;
+    }
+    
+    &:focus {
+        // typography
+        line-height:50px;
+        
+        //visual
+        background-color: #ffffff;
+        border: 4px solid $formFieldsetOutline;
+        outline: none;
+    }
+}
+
+@mixin numSelectorButton {
+    // block model
+    display: inline-block;
+    width: 62px;
+
+    // typography
+    color: $formFieldBackground;
+    text-align: center;
+
+    //visual
+    cursor: pointer;
+}
