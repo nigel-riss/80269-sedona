@@ -1,0 +1,31 @@
+.form-grey-button {
+    // block model
+    width: 100%;
+    
+    // typography
+    color: $formGreyButtonText;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 58px;
+    text-align: center;
+    
+    // visual
+    background-color: $formFieldBackground;
+    cursor: pointer;
+    
+    &:hover {
+        // typography
+        color: $formGreyButtonTextHover;
+        
+        //visual
+        background-color: $formFieldsetOutline;
+    }
+    
+    &:active {
+        // typogrephy
+        color: $formGreyButtonTextActive;
+        
+        // visual
+        background-color: $formSelectorDownBorder;
+    }
+}

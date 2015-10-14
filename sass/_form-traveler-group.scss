@@ -1,0 +1,40 @@
+.form-traveler-group {
+    clear: both;
+    padding-top: 30px;
+    
+    &__traveler {
+        // block model
+        float: right;
+        width: 210px;
+    }
+    
+    &__counter {
+        // block model
+        float: left;
+        width: 61px;
+        
+        // typography
+        text-align: center;
+        
+        & span {
+            // block model
+            display: block;
+            
+            &:first-of-type {
+                padding-bottom: 10px;
+                
+                font-size: 14px;
+            }
+            
+            &:last-of-type {
+                // typography
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 58px;
+                
+                // visual
+                background-color: $formFieldBackground;
+            }
+        }
+    }
+}
