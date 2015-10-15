@@ -1,0 +1,52 @@
+
+.reason-small {
+    background-color: #eeeeee;
+}
+
+.reason-small {
+    /*typography*/
+    font-size: 0;
+    text-align: center;
+    
+    &__caption {
+        /*block bodel*/
+        margin: 0;
+        
+        /*typography*/
+        font-size: 18px;
+    }
+    
+    &__text,
+    &__seperator{
+        /*block bodel*/
+        margin: 0;
+        
+        /*typography*/
+        font-size: 14px;
+    }
+}
+
+.reason-small {
+    &__caption {
+        /*block model*/
+        padding-top: 30px;
+    }
+    &__text {
+        /*block model*/
+        margin: 0 20px;
+        padding-bottom: 30px;
+        
+        /*typography*/
+        line-height: 1.5;
+        
+        &--underlined {
+            border-bottom: 1px solid #d6d6d6;
+        }
+    }
+}
+
+.reason-small {
+    &__seperator {
+        padding-bottom: 10px;
+    }
+}

@@ -1,0 +1,41 @@
+.bonus-item {
+    /*block model*/
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+    padding-left: 70px;
+    padding-right: 40px;
+    
+    /*visual*/
+    background-repeat: no-repeat;
+    background-position: 20px 20px;
+    
+    &__caption {
+        /*block model*/
+        margin: 0;
+        padding: 0;
+        padding-bottom: 10px;
+        
+        font-size: 18px;
+    }
+    
+    &__text {
+        /*block model*/
+        margin: 0;
+        padding: 0;
+        
+        font-size: 14px;
+    }
+    
+    &--accomodation {
+        background-image: url(../img/icon-accomodation.png);
+    }
+    
+    &--gift {
+        background-image: url(../img/icon-gift.png);
+    }
+    
+    &--food {
+        background-image: url(../img/icon-food.png);
+    }
+}

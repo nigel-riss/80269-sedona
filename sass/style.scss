@@ -6,6 +6,10 @@
 
 @import 'main-menu';
 @import 'hero';
+@import 'slogan';
+@import 'reason-big';
+@import 'reason-small';
+@import 'bonus-item';
 
 @import 'form-fieldset';
 @import 'form-label';
@@ -37,201 +41,14 @@ body {
     text-transform: uppercase;
 }
 
-
-
-.reason-small {
-    background-color: #eeeeee;
-}
-
-.slogan,
-.reason-big,
-.reason-small {
-    /*typography*/
-    font-size: 0;
-    text-align: center;
-    
-    &__caption {
-        /*block bodel*/
-        margin: 0;
-        
-        /*typography*/
-        font-size: 18px;
-    }
-    
-    &__text,
-    &__seperator{
-        /*block bodel*/
-        margin: 0;
-        
-        /*typography*/
-        font-size: 14px;
-    }
-}
-
-.slogan {
-    &__caption {
-        /*block model*/
-        padding-top: 40px;
-        padding-bottom: 34px;
-    }
-    
-    &__text {
-        /*block model*/
-        padding: 0 20px;
-        padding-bottom: 30px;
-    }
-}
-
-.reason-big {
-    /*positioning*/
-    position: relative;
-    
-    /*typography*/
-    color: #ffffff;
-    
-    /*visual*/
-    background-color: $colorLightBlue;
-    overflow-x: hidden;
-    
-    
-    
-    &__caption {
-        /*block bodel*/
-        padding-top: 40px;
-        padding-bottom: 10px;
-    }
-    
-    &__text {
-        padding: 0 20px;
-        padding-bottom: 40px;
-    }
-    
-    &--first {
-        .reason-big__caption {
-            padding-top: 60px;
-        }
-    }
-    
-    &--first::before,
-    &--first::after {
-        content: "";
-        
-        /*positioning*/
-        position: absolute;
-        top: 0;
-        
-        /*block model*/
-        display: block;
-        width: 50%;
-        height: 5%;
-    }
-    
-    &--first::before {
-        /*positioning*/
-        left: 0;
-        
-        /*visual*/
-        background-image:
-            linear-gradient(
-                to bottom left,
-                #ffffff 0,
-                #ffffff 50%,
-                transparent 50%,
-                transparent
-            );
-    }
-    
-    &--first::after {
-        /*positioning*/
-        right: 0;
-                
-        /*visual*/
-        background-image:
-            linear-gradient(
-                to bottom right,
-                #ffffff 0,
-                #ffffff 50%,
-                transparent 50%,
-                transparent
-            );
-    }
-}
-
-.reason-small {
-    &__caption {
-        /*block model*/
-        padding-top: 30px;
-    }
-    &__text {
-        /*block model*/
-        margin: 0 20px;
-        padding-bottom: 30px;
-        
-        /*typography*/
-        line-height: 1.5;
-        
-        &--underlined {
-            border-bottom: 1px solid #d6d6d6;
-        }
-    }
-}
-
-.reason-big,
-.reason-small {
-    &__seperator {
-        padding-bottom: 10px;
-    }
-}
-
 .bonuses {
     /*block model*/
     padding-top: 10px;
     padding-bottom: 40px;
 }
 
-.bonus-item {
-    /*block model*/
-    margin: 0;
-    padding: 0;
-    padding-top: 30px;
-    padding-left: 70px;
-    padding-right: 40px;
-    
-    /*visual*/
-    background-repeat: no-repeat;
-    background-position: 20px 20px;
-    
-    &__caption {
-        /*block model*/
-        margin: 0;
-        padding: 0;
-        padding-bottom: 10px;
-        
-        font-size: 18px;
-    }
-    
-    &__text {
-        /*block model*/
-        margin: 0;
-        padding: 0;
-        
-        font-size: 14px;
-    }
-    
-    &--accomodation {
-        background-image: url(../img/icon-accomodation.png);
-    }
-    
-    &--gift {
-        background-image: url(../img/icon-gift.png);
-    }
-    
-    &--food {
-        background-image: url(../img/icon-food.png);
-    }
-}
-
 .hotels-check {
+    padding: 0 20px;
     padding-bottom: 50px;
     
     /*typography*/
@@ -249,29 +66,11 @@ body {
     
     &__text {
         /*block model*/
-        margin: 0 20px;
         padding-bottom: 40px;
         
         /*typography*/
         font-size: 14px;
         line-height: 1.714;
-    }
-    
-    &__button {
-        /*block model*/
-        display: block;
-        margin: 0 20px;
-        padding: 18px;
-        
-        /*typography*/
-        color: #ffffff;
-        font-size: 21px;
-        font-weight: bold;
-        line-height: 22px;
-        text-decoration: none;
-        
-        /*visual*/
-        background-color: $colorMainBlue;
     }
 }
 
