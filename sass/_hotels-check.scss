@@ -1,0 +1,26 @@
+.hotels-check {
+    padding: 0 20px;
+    padding-bottom: 50px;
+    
+    /*typography*/
+    text-align: center;
+    
+    &__caption {
+        /*block model*/
+        margin: 0;
+        padding-top: 28px;
+        padding-bottom: 5px;
+        
+        /*typography*/
+        font-size: 21px;
+    }
+    
+    &__text {
+        /*block model*/
+        padding-bottom: 20px;
+        
+        /*typography*/
+        font-size: 14px;
+        line-height: 24px;
+    }
+}

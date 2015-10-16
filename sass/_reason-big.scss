@@ -15,7 +15,7 @@
         /*block bodel*/
         margin: 0;
         padding-top: 40px;
-        padding-bottom: 10px;
+        padding-bottom: 12px;
         
         /*typography*/
         font-size: 18px;
@@ -29,20 +29,26 @@
         
         /*typography*/
         font-size: 14px;
+        line-height: 21px;
     }
     
     &__seperator {
         /*block bodel*/
         margin: 0;
-        padding-bottom: 10px;
+        padding-bottom: 18px;
         
         /*typography*/
         font-size: 14px;
     }
     
+    &__image {
+        margin: 0;
+        padding: 0;
+    }
+    
     &--first {
         .reason-big__caption {
-            padding-top: 60px;
+            padding-top: 56px;
         }
     }
     
@@ -57,7 +63,7 @@
         /*block model*/
         display: block;
         width: 50%;
-        height: 5%;
+        height: 15px;
     }
     
     &--first::before {

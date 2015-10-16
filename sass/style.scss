@@ -10,6 +10,7 @@
 @import 'reason-big';
 @import 'reason-small';
 @import 'bonus-item';
+@import 'hotels-check';
 
 @import 'form-fieldset';
 @import 'form-label';
@@ -48,42 +49,9 @@ body {
     }
 }
 
-.bonuses {
-    /*block model*/
-    padding-top: 10px;
-    padding-bottom: 40px;
-}
-
-.hotels-check {
-    padding: 0 20px;
-    padding-bottom: 50px;
-    
-    /*typography*/
-    text-align: center;
-    
-    &__caption {
-        /*block model*/
-        margin: 0;
-        padding-top: 30px;
-        padding-bottom: 25px;
-        
-        /*typography*/
-        font-size: 21px;
-    }
-    
-    &__text {
-        /*block model*/
-        padding-bottom: 40px;
-        
-        /*typography*/
-        font-size: 14px;
-        line-height: 1.714;
-    }
-}
-
 .map {
     /*block model*/
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     
     /*typography*/
     text-align: center;
