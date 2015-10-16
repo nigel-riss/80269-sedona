@@ -1,17 +1,17 @@
 .bonus-item {
-    /*block model*/
+    // block model
     margin: 0;
     padding: 0;
     padding-top: 30px;
     padding-left: 70px;
     padding-right: 40px;
     
-    /*visual*/
+    // visual
     background-repeat: no-repeat;
     background-position: 20px 20px;
     
     &__caption {
-        /*block model*/
+        // block model
         margin: 0;
         padding: 0;
         padding-bottom: 10px;
@@ -20,22 +20,29 @@
     }
     
     &__text {
-        /*block model*/
+        // block model
         margin: 0;
         padding: 0;
         
         font-size: 14px;
     }
-    
-    &--accomodation {
-        background-image: url(../img/icon-accomodation.png);
+}
+
+@media (min-width: 768px) {
+    .bonuses {
+        // block model
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
     }
     
-    &--gift {
-        background-image: url(../img/icon-gift.png);
-    }
-    
-    &--food {
-        background-image: url(../img/icon-food.png);
+    .bonus-item {
+        // block model
+        padding: 0;
+        width: 33%;
+        float: left;
+        
+        // typography
+        text-align: center;
     }
 }

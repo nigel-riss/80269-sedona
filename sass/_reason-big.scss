@@ -90,3 +90,36 @@
             );
     }
 }
+
+@media (min-width: 768px) {
+    .reason-big {
+        clear: both;
+        
+        &__caption {
+            // block model
+            padding: 0 20px;
+            padding-top: 50px;
+            
+            // typography
+            font-size: 21px;
+        }
+        
+        &__content {
+            // block model
+            float: right;
+            width: 33%;
+        }
+        
+        &--first {
+            & .reason-big__content {
+                // block model
+                float: left;
+            }
+        }
+        
+        &--first::before,
+        &--first::after {
+            display: none
+        }
+    }
+}

@@ -24,8 +24,6 @@
 @import 'form-gallery';
 
 
-
-html,
 body {
     // temp
     outline: 1px solid $colorLightBlue;
@@ -39,6 +37,15 @@ body {
     /*typography*/
     font-family: $font;
     text-transform: uppercase;
+}
+
+.page-header { position: relative; }
+
+@media (min-width: 768px) {
+    body {
+        // block model
+        max-width: 768px;
+    }
 }
 
 .bonuses {

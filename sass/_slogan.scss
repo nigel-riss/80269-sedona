@@ -31,3 +31,14 @@
         font-size: 14px;
     }
 }
+
+@media (min-width: 768px) {
+    .slogan {
+        &__caption {
+            padding-left: 80px;
+            padding-right: 80px;
+            
+            font-size: 21px;
+        }
+    }
+}

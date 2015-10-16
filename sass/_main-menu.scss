@@ -55,3 +55,64 @@
         }
     }
 }
+
+@media (min-width: 768px) {
+    .main-menu{
+        // positioning
+        position: absolute;
+        
+        // block model
+        width: 100%;
+        
+        // visual
+        z-index: 1;
+        
+        &__item {
+            // block model
+            display: inline-block;
+            vertical-align: top;
+            width: 20%;
+            float: left;
+            
+            &:nth-child(2) {
+                padding-right: 20%;
+            }
+        }
+        
+        &__item-link {
+            // typography
+            color: $mainMenuItem;
+            font-size: 14px;
+            
+            // visual
+            background: none;
+            border: none;
+            
+            &--last {
+                // visual
+                border: none;
+                box-shadow: none;
+            }
+            
+            &--first {
+                border: none;
+            }
+            
+            &:hover {
+                // typography
+                color: $colorMainBlue;
+                
+                // visual
+                background: none;
+            }
+            
+            &:active {
+                // typography
+                color: $mainMenuItemDown;
+                
+                // visual
+                background: none;
+            }
+        }
+    }
+}
