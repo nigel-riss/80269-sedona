@@ -9,13 +9,13 @@
     
     /*visual*/
     background-color: $colorLightBlue;
-    overflow-x: hidden;
+    overflow: hidden;
     
     &__caption {
         /*block bodel*/
         margin: 0;
         padding-top: 40px;
-        padding-bottom: 12px;
+        padding-bottom: 10px;
         
         /*typography*/
         font-size: 18px;
@@ -41,14 +41,23 @@
         font-size: 14px;
     }
     
+    &__image-container {
+        // block model
+        height: 256px;
+    }
+    
     &__image {
+        // block model
         margin: 0;
+        margin-left: -105px;
         padding: 0;
+        height: 100%;
     }
     
     &--first {
         .reason-big__caption {
             padding-top: 56px;
+            padding-bottom: 12px;
         }
     }
     
@@ -99,7 +108,13 @@
 
 @media (min-width: 768px) {
     .reason-big {
+        // block model
+        height: 256px;
         clear: both;
+        overflow: hidden;
+        
+        // typography
+        font-size: 0;
         
         &__caption {
             // block model
@@ -110,10 +125,34 @@
             font-size: 21px;
         }
         
+        &--first {
+        .reason-big__caption {
+                padding-top: 44px;
+                padding-bottom: 12px;
+            }
+        }
+        
         &__content {
             // block model
             float: right;
             width: 33%;
+        }
+        
+        &__image-container {
+            // block model
+            height: 256px;
+            width: 67%;
+            float: right;
+            
+            font-size: 0;
+            background-color: red;
+        }
+        
+        &__image {
+            // block model
+            margin: 0;
+            width: 100%;
+            height: auto;
         }
         
         &--first {

@@ -11,6 +11,8 @@
 @import 'reason-small';
 @import 'bonus-item';
 @import 'hotels-check';
+@import 'social';
+@import 'copyrights';
 
 @import 'form-fieldset';
 @import 'form-label';
@@ -50,9 +52,6 @@ body {
 }
 
 .map {
-    /*block model*/
-    padding-bottom: 30px;
-    
     /*typography*/
     text-align: center;
 }
@@ -62,58 +61,11 @@ body {
     
     &__hashtag {
         /*block model*/
-        padding-bottom: 40px;
+        padding-top: 34px;
+        padding-bottom: 36px;
         
         /*typography*/
         font-size: 21px;
         font-weight: bold;
-    }
-}
-
-.social {
-    /*block model*/
-    padding-bottom: 50px;
-    
-    text-align: center;
-    
-    &__button {
-        /*block model*/
-        display: inline-block;
-        vertical-align: top;
-        width: 46px;
-        height: 48px;
-        
-        /*typography*/
-        font-size: 0;
-        
-        /*visual*/
-        background-color: $colorMainBlue;
-        
-        &--twitter {
-            background-image: url(../img/icon-twitter.png);
-        }
-        
-        &--facebook {
-            background-image: url(../img/icon-facebook.png);
-        }
-        
-        &--youtube {
-            background-image: url(../img/icon-youtube.png);
-        }
-    }
-}
-
-.copyrights {
-    padding-bottom: 35px;
-    
-    &__logo{
-        display: inline-block;
-        vertical-align: middle;
-        width: 40px;
-        height: 40px;
-        
-        font-size: 0;
-        
-        background-image: url(../img/htmlacademy.svg);
     }
 }

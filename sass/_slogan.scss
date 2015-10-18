@@ -4,7 +4,7 @@
     text-align: center;
     
     &__caption {
-        // block bodel
+        // block model
         margin: 0;
         padding-top: 39px;
         padding-bottom: 26px;
@@ -37,10 +37,19 @@
 @media (min-width: 768px) {
     .slogan {
         &__caption {
+            // block model
+            padding-top: 56px;
             padding-left: 80px;
             padding-right: 80px;
+            padding-bottom: 28px;
             
+            // typography
             font-size: 21px;
+        }
+        
+        &__text {
+            // block model
+            padding-bottom: 50px;
         }
     }
 }

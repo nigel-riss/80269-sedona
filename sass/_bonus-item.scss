@@ -22,6 +22,7 @@
         padding-left: 50px;
         padding-bottom: 15px;
         
+        // typography
         font-size: 18px;
     }
     
@@ -46,27 +47,33 @@
     
     &--accomodation {
         & .bonus-item__icon {
+            // positioning
             top: -11px;
             left: 2px;
             
+            // block model
             width: 38px;
         }
     }
     
     &--gift {
         & .bonus-item__icon {
+            // positioning
             top: -13px;
             left: 5px;
             
+            // block model
             width: 32px;
         }
     }
     
     &--food {
         & .bonus-item__icon {
+            // positioning
             top: -7px;
             left: -1px;
             
+            // block model
             width: 39px;
         }
     }
@@ -78,15 +85,80 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+        padding-top: 60px;
+        padding-bottom: 62px;
     }
     
     .bonus-item {
         // block model
         padding: 0;
         width: 33%;
-        float: left;
         
         // typography
         text-align: center;
+        
+        &__caption {
+            // block model
+            padding-left: 0;
+            padding-bottom: 20px;
+            
+            // typography
+            font-size: 21px;
+        }
+        
+        &__text {
+           // block model
+            padding: 0 30px;
+        }
+        
+        &__icon {
+            // block model
+            float: none;
+        }
+        
+        &--accomodation {
+            // block model
+            order: 0;
+            
+            & .bonus-item__icon {
+                // positioning
+                top: 0;
+                left: 0;
+
+                // block model
+                width: auto;
+                padding-bottom: 26px;
+            }
+        }
+
+        &--gift {
+            // block model
+            order: 2;
+            
+            & .bonus-item__icon {
+                // positioning
+                top: -4px;
+                left: -2px;
+
+                // block model
+                width: auto;
+                padding-bottom: 23px;
+            }
+        }
+
+        &--food {
+            // block model
+            order: 1;
+            
+            & .bonus-item__icon {
+                // positioning
+                top: 2px;
+                left: 0;
+
+                // block model
+                width: auto;
+                padding-bottom: 30px;
+            }
+        }
     }
 }

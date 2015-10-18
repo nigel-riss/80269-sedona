@@ -18,7 +18,7 @@
         url(../img/photo-background@1x.jpg);
     background-position: center bottom, 0 0, center 56px;
     background-repeat: no-repeat;
-    background-size: 786px, cover, 768px;
+    background-size: 768px, cover, 768px;
     
     &--inner-page {
         // block model
@@ -36,6 +36,7 @@
     }
     
     &__welcome {
+        // block model
         width: 144px;
         padding-top: 28px;
         
@@ -43,12 +44,14 @@
     }
     
     &__gorgeous {
+        // block model
         width: 196px;
         
         fill: #766357;
     }
     
     &__sedona {
+        // block model
         width: 280px;
         padding-top: 40px;
         
@@ -56,6 +59,7 @@
     }
     
     &__because {
+        // block model
         width: 196px;
         padding-top: 38px;
         
@@ -69,6 +73,31 @@
 
 @media (min-width: 768px) {
     .hero {
-        height: 558px;
+        height: 568px;
+        
+        &__welcome {
+            // block model
+            width: 190px;
+            padding-top: 62px;
+        }
+        
+        &__gorgeous {
+            // block model
+            width: 256px;
+            padding-top: 12px;
+        }
+
+        &__sedona {
+            // block model
+            width: 458px;
+            padding-top: 51px;
+        }
+        
+        &__because {
+            // block model
+            width: 296px;
+            padding-top: 54px;
+            margin-left: -13px;
+        }
     }
 }

@@ -1,0 +1,44 @@
+.social {
+    // block model
+    padding-bottom: 27px;
+    
+    // typography
+    font-size: 0;
+    text-align: center;
+    
+    &__button {
+        // block model
+        display: inline-flex;
+        justify-content: center;
+        vertical-align: top;
+        
+        margin-left: 6px;
+        width: 46px;
+        height: 48px;
+        
+        // typography
+        font-size: 0;
+        
+        // visual
+        background-color: $colorMainBlue;
+        
+        &:first-of-type {
+            margin-left: 0;
+        }
+        
+        &:hover {
+            // visual
+            background-color: $colorHoverBlue;
+        }
+        
+        &:active {
+            // visual
+            background-color: $colorPressBlue;
+            
+            & .social__icon {
+                // visual
+                opacity: .3;
+            }
+        }
+    }
+}
