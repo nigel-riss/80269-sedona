@@ -11,8 +11,7 @@
 @import 'reason-small';
 @import 'bonus-item';
 @import 'hotels-check';
-@import 'social';
-@import 'copyrights';
+@import 'page-footer';
 
 @import 'form-fieldset';
 @import 'form-label';
@@ -54,18 +53,4 @@ body {
 .map {
     /*typography*/
     text-align: center;
-}
-
-.page-footer {
-    text-align: center;
-    
-    &__hashtag {
-        /*block model*/
-        padding-top: 34px;
-        padding-bottom: 36px;
-        
-        /*typography*/
-        font-size: 21px;
-        font-weight: bold;
-    }
 }

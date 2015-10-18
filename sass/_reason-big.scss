@@ -119,16 +119,28 @@
         &__caption {
             // block model
             padding: 0 20px;
-            padding-top: 50px;
+            padding-top: 44px;
+            padding-bottom: 10px;
             
             // typography
             font-size: 21px;
         }
         
+        &__seperator {
+            // block model
+            padding-bottom: 23px;
+        }
+        
+        &__text {
+            // block model
+            padding: 0 30px;
+        }
+        
         &--first {
-        .reason-big__caption {
+            .reason-big__caption {
+                // block model
                 padding-top: 44px;
-                padding-bottom: 12px;
+                padding-bottom: 10px;
             }
         }
         
@@ -136,6 +148,7 @@
             // block model
             float: right;
             width: 33%;
+            clear: both;
         }
         
         &__image-container {
@@ -144,6 +157,7 @@
             width: 67%;
             float: right;
             
+            // typography
             font-size: 0;
             background-color: red;
         }
