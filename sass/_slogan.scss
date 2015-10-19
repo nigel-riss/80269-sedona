@@ -1,4 +1,7 @@
 .slogan {
+    // block model
+    padding-bottom: 27px;
+    
     // typography
     font-size: 0;
     text-align: center;
@@ -7,7 +10,6 @@
         // block model
         margin: 0;
         padding-top: 39px;
-        padding-bottom: 26px;
         
         // typography
         font-size: 18px;
@@ -15,10 +17,10 @@
     }
     
     &__text {
-        // block bodel
+        // block model
         margin: 0;
         padding: 0 20px;
-        padding-bottom: 27px;
+        padding-top: 26px;
         
         // typography
         font-size: 14px;
@@ -26,7 +28,7 @@
     }
     
     &__seperator {
-        // block bodel
+        // block model
         margin: 0;
         
         // typography
@@ -34,14 +36,27 @@
     }
 }
 
+.slogan--form {
+    // block model
+    padding-top: 35px;
+    padding-bottom: 17px;
+
+    .slogan__text {
+        // typography
+        line-height: 24px;
+    }
+}
+
 @media (min-width: 768px) {
     .slogan {
+        // block model
+        padding-bottom: 50px;
+        
         &__caption {
             // block model
             padding-top: 56px;
             padding-left: 80px;
             padding-right: 80px;
-            padding-bottom: 28px;
             
             // typography
             font-size: 21px;
@@ -49,7 +64,27 @@
         
         &__text {
             // block model
-            padding-bottom: 50px;
+            padding-top: 28px;
+        }
+    }
+    
+    .slogan--form {
+        // block model
+        padding-top: 18px;
+        padding-bottom: 58px;
+        
+        .slogan__caption {
+            // typography
+            font-size: 30px;
+        }
+
+        .slogan__text {
+            // block model
+            padding: 0 140px;
+            padding-top: 31px;
+
+            // typography
+            line-height: 24px;
         }
     }
 }

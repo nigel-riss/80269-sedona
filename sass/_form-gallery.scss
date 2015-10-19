@@ -1,16 +1,19 @@
 .form-gallery {
     // block model
     display: flex;
-    padding-top: 50px;
     flex-wrap: wrap;
     justify-content: space-between;
+    
+    padding: 0 1px;
+    padding-top: 55px;
+    padding-bottom: 12px;
     
     &__image {
         // positioning
         position: relative;
         
         // block model
-        padding-bottom: 50px;
+        padding-bottom: 35px;
         
         &::before {
             content: '';

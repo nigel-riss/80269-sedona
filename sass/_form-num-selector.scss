@@ -1,7 +1,7 @@
 .form-num-selector {
     // block model
     display: block;
-    //width: calc(100% - 40px);
+    
     font-size: 0;
     
     &__substract {
@@ -78,8 +78,32 @@
         @include formInputStyles;
 
         // block model
-        width: 140px;
+        width: 144px;
         display: inline-block;
         margin: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .form-num-selector {
+        
+        &__substract {
+            // block model
+            margin-right: 0;
+        }
+        
+        &__add {
+            // block model
+            margin-left: 0;
+        }
+        
+        &__number-field {
+            // block model
+            padding: 0;
+            width: 52px;
+            
+            // typography
+            text-align: center;
+        }
     }
 }

@@ -1,0 +1,67 @@
+@media (min-width: 768px) {
+    .form-input-group {
+        display: inline-block;
+        
+        // typography
+        font-size: 0;
+        
+        &--introduce {
+            // block model
+            width: 176px;
+            margin-left: 60px;
+            
+            &:first-of-type {
+                // block model
+                margin-left: 0;
+            }
+        }
+        
+        &--impression {
+            // block model
+            padding-left: 125px;
+        }
+        
+        &--travel-dates {
+            // block model
+            width: 176px;
+            margin-left: 60px;
+            
+            &:first-of-type {
+                // block model
+                margin-left: 0;
+            }
+        }
+        
+        &--traveler-count {
+            // block model
+            width: 100%;
+            margin-bottom: -10px;
+            
+            // typography
+            text-align: center;
+        }
+        
+        &--traveler {
+            // block model
+            width: 190px;
+            //margin-right: 4px;
+            
+            &:last-of-type {
+                // block model
+                //margin-left: 0;
+            }
+        }
+        
+        &--sights {
+            // block model
+            
+            // typography
+            text-align: left;
+            
+            &:first-of-type {
+                padding-left: 4px;
+                padding-right: 68px;
+            }
+        }
+    }
+}
