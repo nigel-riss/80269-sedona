@@ -92,12 +92,12 @@
 
 @media (min-width: 768px) {
     .hero {
-        height: 568px;
+        height: 512px;
         
         &__welcome {
             // block model
             width: 190px;
-            padding-top: 62px;
+            padding-top: 76px;
         }
         
         &__gorgeous {
@@ -137,6 +137,11 @@
                 width: 458px;
                 padding-top: 87px;
             }
+        }
+        
+        &__menu-button {
+            // block model
+            display: none;
         }
     }
 }

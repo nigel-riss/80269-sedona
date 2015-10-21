@@ -19,7 +19,7 @@
 }
 
 @media (min-width: 768px) {
-    .fix
+    .fix {
         &--mobile {
             display: none;
         }
@@ -31,10 +31,11 @@
         &--desktop {
             display: none;
         }
+    }
 }
 
 @media (min-width: 1200px) {
-    .fix
+    .fix {
         &--mobile {
             display: none;
         }
@@ -46,4 +47,5 @@
         &--desktop {
             display: inline;
         }
+    }
 }

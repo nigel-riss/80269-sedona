@@ -105,6 +105,11 @@
             // block model
             padding-top: 28px;
         }
+        
+        &::before,
+        &::after {
+            display: none
+        }
     }
     
     .slogan--form {

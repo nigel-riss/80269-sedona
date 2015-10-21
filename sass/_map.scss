@@ -2,8 +2,12 @@
     // positioning
     position: relative;
     
-    // typography
-    text-align: center;
+    // block model
+    height: 350px;
+    
+    // visual
+    background-image: url(../img/map-bg.jpg);
+    background-position: center;
     
     &__marker {
         // positioning
