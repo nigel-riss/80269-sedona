@@ -84,6 +84,11 @@
         // typography
         line-height: 24px;
     }
+    
+    &::before,
+    &::after {
+        display: none
+    }
 }
 
 @media (min-width: 768px) {
@@ -104,11 +109,6 @@
         &__text {
             // block model
             padding-top: 28px;
-        }
-        
-        &::before,
-        &::after {
-            display: none
         }
     }
     

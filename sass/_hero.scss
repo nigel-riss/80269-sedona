@@ -21,20 +21,20 @@
     
     &--inner-page {
         // block model
-        height: 214px;
+        height: 158px;
         
         // visual
         background-image:
             url(../img/intro-triangle.svg),
             url(../img/photo-background@1x.jpg);
-        background-position: center bottom, center 1px;
+        background-position: center bottom, center -56px;
         background-repeat: no-repeat;
         background-size: 768px, 100%;
         
         & .hero__sedona {
             // block model
             width: 176px;
-            padding-top: 9px;
+            padding-top: 23px;
         }
     }
     

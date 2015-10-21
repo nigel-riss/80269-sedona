@@ -3,34 +3,42 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, minimal-ui">
     <title>HTML Academy: sedona</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
+
 
 <body>
     <header class="page-header">
         <nav class="main-menu">
             <ul class="main-menu__list">
-                <li class="main-menu__item">
+                <li class="main-menu__item  main-menu__item--map">
                     <a class="main-menu__item-link  main-menu__item-link--first" href="">Карта штата</a>
                 </li>
-                <li class="main-menu__item">
+                <li class="main-menu__item  main-menu__item--info">
                     <a class="main-menu__item-link" href="">Информация</a>
                 </li>
-                <li class="main-menu__item">
+                <li class="main-menu__item  main-menu__item--media">
                     <a class="main-menu__item-link" href="">Фото и видео</a>
                 </li>
-                <li class="main-menu__item">
+                <li class="main-menu__item  main-menu__item--hotels">
                     <a class="main-menu__item-link  main-menu__item-link--last" href="">Гостиницы</a>
                 </li>
             </ul>
+
+            <div class="main-menu__close-button"></div>
         </nav>
 
-
+        <div class="logo">
+            <a href="index.html">
+                <img class="logo_image" src="img/logo-sedona@1x.png" width="67" height="56" alt="City of Sedona">
+            </a>
+        </div>
 
         <div class="hero hero--inner-page">
             <div class="hero__menu-button"></div>
-            <img class="hero__logo" src="img/logo.png" alt="">
             <!--BIG SVG DATA GOES NEXT -->
             <svg class="hero__sedona" width="459.755px" height="79.804px" viewBox="0 0 459.755 79.804" enable-background="new 0 0 459.755 79.804">
                 <g>
@@ -144,7 +152,7 @@
                 <legend class="form-fieldset__legend">Кол-во путешественников:</legend>
 
                 <div class="form-input-group form-input-group--traveler-count">
-                    <label class="form-label" for="traveler-number"><span class="form-label__text  form-label__text--mobile  form-label__text--desktop">Количество</span><span class="form-label__text  form-label__text--tablet">Кол-во</span> путешественников:<span class="form-label__text  form-label__text--required">*</span></label>
+                    <label class="form-label" for="traveler-number"><span class="fix  fix--mobile">Количество</span><span class="fix  fix--tablet">Кол-во</span><span class="fix  fix--desktop">Кол-во</span> путешественников:<span class="form-label__text  form-label__text--required">*</span></label>
                     <div class="form-num-selector">
                         <span class="form-num-selector__substract">-</span>
                         <input class="form-num-selector__number-field" id="traveler-number" type="text" value="2">
