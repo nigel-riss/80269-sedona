@@ -65,3 +65,27 @@
         }
     }
 }
+
+@media (min-width: 1200px) {
+    .form-input-group {
+        &--introduce {
+            // block model
+            width: 278px;
+        }
+        
+        &--impression {
+            // block model
+            padding-left: 102px;
+        }
+        
+        &--travel-dates {
+            //block model
+            width: 278px;
+        }
+        
+        &--traveler-count {
+            // typography
+            text-align: left;
+        }
+    }
+}

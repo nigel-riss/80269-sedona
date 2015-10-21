@@ -1,6 +1,9 @@
 .slogan {
+    //positioning
+    position: relative;
+    
     // block model
-    padding-bottom: 27px;
+    padding-bottom: 43px;
     
     // typography
     font-size: 0;
@@ -27,12 +30,48 @@
         line-height: 26px;
     }
     
-    &__seperator {
-        // block model
-        margin: 0;
+    &::before,
+    &::after {
+        content: "";
         
-        // typography
-        font-size: 14px;
+        // positioning
+        position: absolute;
+        bottom: 0;
+        
+        // block model
+        display: block;
+        width: 50%;
+        height: 15px;
+    }
+    
+    &::before {
+        // positioning
+        left: 0;
+        
+        // visual
+        background-image:
+            linear-gradient(
+                to bottom left,
+                transparent 0,
+                transparent 50%,
+                $colorMainBlue 50%,
+                $colorMainBlue
+            );
+    }
+    
+    &::after {
+        // positioning
+        right: 0;
+                
+        // visual
+        background-image:
+            linear-gradient(
+                to bottom right,
+                transparent 0,
+                transparent 50%,
+                $colorMainBlue 50%,
+                $colorMainBlue
+            );
     }
 }
 
@@ -85,6 +124,28 @@
 
             // typography
             line-height: 24px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .slogan {
+        &__caption {
+            // block model
+            padding-top: 61px;
+            padding-left: 300px;
+            padding-right: 300px;
+        }
+        
+        &--form {
+            // block model
+            padding-top: 51px;
+            
+            .slogan__text {
+                // block model
+                padding: 0 360px;
+                padding-top: 31px;
+            }
         }
     }
 }

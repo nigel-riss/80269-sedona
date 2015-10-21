@@ -82,3 +82,19 @@
         }
     }
 }
+
+@media (min-width: 1200px) {
+    .reason-small {
+        &__caption {
+            // block model
+            padding: 0 120px;
+            padding-top: 45px;
+        }
+        
+        &__text {
+            // block model
+            padding: 0 40px;
+            padding-top: 23px;
+        }
+    }
+}

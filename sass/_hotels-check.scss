@@ -1,6 +1,7 @@
 .hotels-check {
     padding: 0 20px;
-    padding-bottom: 50px;
+    padding-top: 27px;
+    padding-bottom: 49px;
     
     // typography
     text-align: center;
@@ -8,7 +9,6 @@
     &__caption {
         // block model
         margin: 0;
-        padding-top: 28px;
         
         // typography
         font-size: 21px;
@@ -17,7 +17,7 @@
     &__text {
         // block model
         padding-top: 5px;
-        padding-bottom: 20px;
+        padding-bottom: 21px;
         
         // typography
         font-size: 14px;
@@ -43,6 +43,19 @@
             // block model
             padding-top: 11px;
             padding-bottom: 28px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .hotels-check {
+        // block model
+        padding: 0 370px;
+        padding-bottom: 66px;
+        
+        &__text {
+            // block model
+            padding-bottom: 32px;
         }
     }
 }

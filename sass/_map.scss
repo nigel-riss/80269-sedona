@@ -1,0 +1,14 @@
+.map {
+    // positioning
+    position: relative;
+    
+    // typography
+    text-align: center;
+    
+    &__marker {
+        // positioning
+        position: absolute;
+        top: calc(50% - 14px);
+        left: calc(50% - 14px);
+    }
+}

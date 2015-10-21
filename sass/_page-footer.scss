@@ -1,10 +1,13 @@
 .page-footer {
+    // block model
+    padding-top: 35px;
+    
+    // typography
     text-align: center;
 }
 
 .hashtag {
     /*block model*/
-    padding-top: 34px;
     padding-bottom: 36px;
 
     /*typography*/
@@ -119,5 +122,12 @@
         box-sizing: border-box;
         padding: 0px 0px;
         padding-left: 48px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .copyrights {
+        // block model
+        padding-left: 183px;
     }
 }

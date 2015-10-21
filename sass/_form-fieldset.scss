@@ -117,3 +117,17 @@
         }
     }
 }
+
+@media (min-width: 1200px) {
+    .form-fieldset {
+        // block model
+        margin: 0 122px;
+        
+        &--impression {
+            // block model
+            padding-left: 3px;
+            // typography
+            text-align: center;
+        }
+    }
+}

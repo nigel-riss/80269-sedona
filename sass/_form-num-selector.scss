@@ -107,3 +107,27 @@
         }
     }
 }
+
+@media (min-width: 1200px) {
+    .form-num-selector {
+        
+        &__substract {
+            // block model
+            margin-right: 6px;
+        }
+        
+        &__add {
+            // block model
+            margin-left: 6px;
+        }
+        
+        &__number-field {
+            // block model
+            padding: 0 21px;
+            width: 142px;
+            
+            // typography
+            text-align: left;
+        }
+    }
+}
