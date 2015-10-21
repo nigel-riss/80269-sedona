@@ -88,15 +88,47 @@
         // visual
         //z-index: 1;
         
+        &__list {
+            // block model
+            display: flex;
+            height: 56px;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 100%;
+            
+            margin-bottom: -56px;
+        }
+        
         &__item {
             // block model
-            display: inline-block;
-            vertical-align: top;
             width: 20%;
-            float: left;
+            box-sizing: border-box;
             
-            &:nth-child(2) {
-                padding-right: 20%;
+            &--info {
+                // flex
+                order:1;
+                align-self: flex-start;
+            }
+            
+            &--media {
+                // flex
+                order:2;
+                align-self: flex-start;
+                margin-right: 20%;
+            }
+            
+            &--map {
+                // flex
+                order: 3;
+                align-self: flex-end;
+                padding-left: 5px;
+            }
+            
+            &--hotels {
+                // flex
+                order: 4;
+                align-self: flex-end;
             }
         }
         
@@ -116,6 +148,7 @@
             }
             
             &--first {
+                // visual
                 border: none;
             }
             
@@ -134,6 +167,11 @@
                 // visual
                 background: none;
             }
+        }
+        
+        &__close-button {
+            // block model
+            display: none;
         }
     }
 }

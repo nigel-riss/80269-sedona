@@ -149,32 +149,34 @@
     .reason-big {
         &__content {
             // block model
+            padding-top: 52px;
             width: 400px;
-        }
-        
-        &__image-container {
-            // block model
-            width: 800px;
-            
         }
         
         &__caption {
             // block model
             padding: 0 100px;
-            padding-top: 50px;
-            padding-bottom: 10px;
         }
         
         &__text {
             // block model
             padding: 0 70px;
+            padding-top: 23px;
         }
         
-        &--first {
-            .reason-big__caption {
-                // block model
-                padding-top: 50px;
-                padding-bottom: 10px;
+        &__image-container {
+            // block model
+            width: 800px;
+        }
+        
+        &__image {
+            // block model
+            margin-top: -77px;
+        }
+        
+        &--second {
+            .reason-big__image {
+                margin-top: -76px;
             }
         }
     }

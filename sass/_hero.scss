@@ -149,16 +149,15 @@
 @media (min-width: 1200px) {
     .hero {
         // block model
-        height: 563px;
+        height: 507px;
         
         /*visual*/
         background-image:
             url(../img/intro-triangle.svg),
-            linear-gradient(#fff 0px, #fff 56px, transparent 56px),
             url(../img/photo-background@1x.jpg);
-        background-position: center bottom, 0 0, center -27px;
+        background-position: center bottom, center -27px;
         background-repeat: no-repeat;
-        background-size: 1200px, cover, 100%;
+        background-size: 1200px, 100%;
         
         &--inner-page {
             // block model
