@@ -76,3 +76,21 @@
     //visual
     cursor: pointer;
 }
+
+@mixin addRetinaBackground {
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        .hero {
+            // visual
+            background-image:
+            url(../img/intro-triangle.svg),
+            url(../img/photo-background@2x.jpg);
+            
+            &--inner-page {
+                // visual
+                background-image:
+                    url(../img/intro-triangle.svg),
+                    url(../img/photo-background@2x.jpg);
+            }
+        }
+    }
+}

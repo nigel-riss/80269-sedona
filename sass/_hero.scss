@@ -143,6 +143,8 @@
             display: none;
         }
     }
+    
+    @include addRetinaBackground;
 }
 
 @media (min-width: 1200px) {
@@ -150,7 +152,7 @@
         // block model
         height: 507px;
         
-        /*visual*/
+        // visual
         background-image:
             url(../img/intro-triangle.svg),
             url(../img/photo-background@1x.jpg);
@@ -162,13 +164,15 @@
             // block model
             height: 300px;
             
-            /*visual*/
+            // visual
             background-image:
                 url(../img/intro-triangle.svg),
                 url(../img/photo-background@1x.jpg);
             background-position: center bottom, center -324px;
             background-repeat: no-repeat;
             background-size: 1200px, 100%;
-            }
+        }
     }
+    
+    @include addRetinaBackground;
 }
