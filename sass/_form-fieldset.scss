@@ -24,7 +24,7 @@
     &--travelers {
         // block model
         padding-top: 52px;
-        padding-bottom: 32px;
+        padding-bottom: 31px;
     }
     
     &--sights {
@@ -129,6 +129,10 @@
             padding-left: 3px;
             // typography
             text-align: center;
+        }
+        
+        &--sights {
+            
         }
     }
 }

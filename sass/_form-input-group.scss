@@ -87,5 +87,21 @@
             // typography
             text-align: left;
         }
+        
+        &--sights {
+            // block model
+            width: 450px;
+            
+            .form-label {
+                // block model
+                width: 220px;
+                display: inline-block;
+            }
+            
+            &:first-of-type {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
     }
 }
