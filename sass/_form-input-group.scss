@@ -59,6 +59,7 @@
             text-align: left;
             
             &:first-of-type {
+                // block model
                 padding-left: 4px;
                 padding-right: 68px;
             }
@@ -86,6 +87,11 @@
         &--traveler-count {
             // typography
             text-align: left;
+            
+            & .form-label {
+                // block model
+                padding-left: 22px;
+            }
         }
         
         &--sights {
@@ -99,8 +105,19 @@
             }
             
             &:first-of-type {
+                // block model
                 padding-left: 0;
                 padding-right: 0;
+            }
+        }
+        
+        &--traveler {
+            // block model
+            width: 280px;
+            
+            &:first-of-type {
+                // block model
+                width: 211px;
             }
         }
     }

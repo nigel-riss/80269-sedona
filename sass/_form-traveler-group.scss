@@ -71,5 +71,9 @@
 }
 
 @media (min-width: 1200px) {
-    
+    .form-traveler-group {
+        &__traveler {
+            width: 890px;
+        }
+    }
 }
