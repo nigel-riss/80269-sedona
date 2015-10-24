@@ -8,15 +8,25 @@
     padding-top: 55px;
     padding-bottom: 12px;
     
-    &__image {
-        // positioning
-        position: relative;
-        
+    //typography
+    font-size: 0;
+}
+
+@media (min-width: 768px) {
+    .form-gallery {
         // block model
-        padding-bottom: 35px;
-        
-        &::before {
-            content: '';
-        }
+        justify-content: flex-start;
+        width: 600px;
+        margin-left: 35px;
+        padding-top: 88px;
+        padding-bottom: 26px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .form-gallery {
+        // block model
+        width: 100%;
+        margin-left: 0;
     }
 }

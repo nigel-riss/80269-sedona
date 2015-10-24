@@ -2,7 +2,7 @@
     // positioning
     position: relative;
     z-index: 1;
-	
+    
     // block model
     height: 70px;
     margin-bottom: -14px;
@@ -14,10 +14,4 @@
     background-image: url(../img/form-logo-triangle.svg);
     background-repeat: no-repeat;
     background-position: center;
-	
-	&__image {
-		// positioning
-		position: relative;
-		z-index: 3;
-	}
 }
