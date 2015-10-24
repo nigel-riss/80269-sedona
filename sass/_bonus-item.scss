@@ -1,0 +1,178 @@
+.bonuses {
+    /*block model*/
+    padding-top: 10px;
+    padding-bottom: 35px;
+}
+
+.bonus-item {
+    // block model
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 40px;
+    clear: both;
+    
+    // visual
+    background-repeat: no-repeat;
+    background-position: 20px 20px;
+    
+    &__caption {
+        // block model
+        margin: 0;
+        padding: 0;
+        padding-left: 50px;
+        
+        // typography
+        font-size: 18px;
+    }
+    
+    &__text {
+        // block model
+        margin: 0;
+        padding: 0;
+        padding-top: 16px;
+        padding-left: 50px;
+        
+        // typography
+        font-size: 14px;
+        line-height: 21px;
+    }
+    
+    &__icon {
+        // positioning
+        position: relative;
+        
+        // block model
+        float: left;
+    }
+    
+    &--accomodation {
+        & .bonus-item__icon {
+            // positioning
+            top: -11px;
+            left: 2px;
+            
+            // block model
+            width: 38px;
+        }
+    }
+    
+    &--gift {
+        & .bonus-item__icon {
+            // positioning
+            top: -13px;
+            left: 5px;
+            
+            // block model
+            width: 32px;
+        }
+    }
+    
+    &--food {
+        & .bonus-item__icon {
+            // positioning
+            top: -7px;
+            left: -1px;
+            
+            // block model
+            width: 39px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .bonuses {
+        // block model
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 62px;
+    }
+    
+    .bonus-item {
+        // block model
+        padding: 0;
+        width: 33%;
+        
+        // typography
+        text-align: center;
+        
+        &__caption {
+            // block model
+            padding-left: 0;
+            padding-bottom: 20px;
+            
+            // typography
+            font-size: 21px;
+        }
+        
+        &__text {
+           // block model
+            padding: 0 30px;
+        }
+        
+        &__icon {
+            // block model
+            float: none;
+        }
+        
+        &--accomodation {
+            // block model
+            order: 0;
+            
+            & .bonus-item__icon {
+                // positioning
+                top: 0;
+                left: 0;
+
+                // block model
+                width: auto;
+                padding-bottom: 26px;
+            }
+        }
+
+        &--gift {
+            // block model
+            order: 2;
+            
+            & .bonus-item__icon {
+                // positioning
+                top: -4px;
+                left: -2px;
+
+                // block model
+                width: auto;
+                padding-bottom: 23px;
+            }
+        }
+
+        &--food {
+            // block model
+            order: 1;
+            
+            & .bonus-item__icon {
+                // positioning
+                top: 2px;
+                left: 0;
+
+                // block model
+                width: auto;
+                padding-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .bonuses {
+        // block model
+        padding-bottom: 83px;
+    }
+    
+    .bonus-item {
+        &__text {
+            // block model
+            padding: 0 65px;
+        }
+    }
+}

@@ -1,0 +1,130 @@
+@media (min-width: 768px) {
+    .form-input-group {
+        display: inline-block;
+        
+        // typography
+        font-size: 0;
+        
+        &--introduce {
+            // block model
+            width: 176px;
+            margin-left: 60px;
+            
+            &:first-of-type {
+                // block model
+                margin-left: 0;
+            }
+        }
+        
+        &--impression {
+            // block model
+            padding-left: 125px;
+        }
+        
+        &--travel-dates {
+            // block model
+            width: 176px;
+            margin-left: 60px;
+            
+            &:first-of-type {
+                // block model
+                margin-left: 0;
+            }
+        }
+        
+        &--traveler-count {
+            // block model
+            width: 100%;
+            margin-bottom: -10px;
+            
+            // typography
+            text-align: center;
+        }
+        
+        &--traveler {
+            // block model
+            width: 190px;
+            //margin-right: 4px;
+            
+            &:last-of-type {
+                // block model
+                //margin-left: 0;
+            }
+        }
+        
+        &--sights {
+            // block model
+            width: 259px;
+			margin-bottom: -2px;
+            
+            // typography
+            text-align: left;
+            
+        }
+		
+		&--devils-bridge {
+			// flex
+			order: 1;
+		}
+		
+		&--slide-park {
+			// flex
+			order: 3;
+		}
+		
+		&--bell-mount {
+			// flex
+			order: 2;
+		}
+		
+		&--red-rocks {
+			// flex
+			order: 4;
+		}
+    }
+}
+
+@media (min-width: 1200px) {
+    .form-input-group {
+        &--introduce {
+            // block model
+            width: 278px;
+        }
+        
+        &--impression {
+            // block model
+            padding-left: 102px;
+        }
+        
+        &--travel-dates {
+            //block model
+            width: 278px;
+        }
+        
+        &--traveler-count {
+            // typography
+            text-align: left;
+            
+            & .form-label {
+                // block model
+                padding-left: 22px;
+            }
+        }
+        
+        &--sights {
+            // block model
+			width: auto;
+           
+		}
+        
+        &--traveler {
+            // block model
+            width: 280px;
+            
+            &:first-of-type {
+                // block model
+                width: 211px;
+            }
+        }
+    }
+}

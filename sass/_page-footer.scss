@@ -1,0 +1,133 @@
+.page-footer {
+    // block model
+    padding-top: 35px;
+    
+    // typography
+    text-align: center;
+}
+
+.hashtag {
+    /*block model*/
+    padding-bottom: 36px;
+
+    /*typography*/
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.social {
+    // block model
+    padding-bottom: 27px;
+    
+    // typography
+    font-size: 0;
+    text-align: center;
+    
+    &__button {
+        // block model
+        display: inline-flex;
+        justify-content: center;
+        vertical-align: top;
+        
+        margin-left: 6px;
+        width: 46px;
+        height: 48px;
+        
+        // typography
+        font-size: 0;
+        
+        // visual
+        background-color: $colorMainBlue;
+        
+        &:first-of-type {
+            margin-left: 0;
+        }
+        
+        &:hover {
+            // visual
+            background-color: $colorHoverBlue;
+        }
+        
+        &:active {
+            // visual
+            background-color: $colorPressBlue;
+            
+            & .social__icon {
+                // visual
+                opacity: .3;
+            }
+        }
+    }
+}
+
+.copyrights {
+    // block model
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 35px;
+    
+    // typography
+    font-size: 14px;
+    
+    &__text,
+    &__logo-link {
+        // typography
+        font-size: 0;
+    }
+    
+    &__logo {
+        // block model
+        padding-left: 10px;
+        
+        &:hover {
+            // visual
+            fill: $colorMainBlue;
+        }
+        
+        &:active {
+            // visual
+            fill: #b2b2b2;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .page-footer {
+        // block model
+        display: flex;
+        justify-content: space-around;
+        align-content: flex-start;
+        padding-top: 36px;
+        padding-bottom: 35px;
+    }
+    
+    .hashtag {
+        // block model
+        width: 33%;
+        padding: 0px 0px;
+        padding-top: 9px;
+    }
+    
+    .social {
+        // block model
+        width: 33%;
+        padding: 0px 0px;
+    }
+    
+    .copyrights {
+        // block model
+        width: 33%;
+        box-sizing: border-box;
+        padding: 0px 0px;
+        padding-left: 48px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .copyrights {
+        // block model
+        padding-left: 183px;
+    }
+}

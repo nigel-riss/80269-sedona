@@ -1,0 +1,61 @@
+.hotels-check {
+    padding: 0 20px;
+    padding-top: 27px;
+    padding-bottom: 49px;
+    
+    // typography
+    text-align: center;
+    
+    &__caption {
+        // block model
+        margin: 0;
+        
+        // typography
+        font-size: 21px;
+    }
+    
+    &__text {
+        // block model
+        padding-top: 5px;
+        padding-bottom: 21px;
+        
+        // typography
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+@media (min-width: 768px) {
+    .hotels-check {
+        // block model
+        padding: 0 155px;
+        padding-bottom: 58px;
+        
+        &__caption {
+            // block model
+            padding-top: 48px;
+            
+            // typography
+            font-size: 30px;
+        }
+        
+        &__text {
+            // block model
+            padding-top: 11px;
+            padding-bottom: 28px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .hotels-check {
+        // block model
+        padding: 0 370px;
+        padding-bottom: 66px;
+        
+        &__text {
+            // block model
+            padding-bottom: 32px;
+        }
+    }
+}

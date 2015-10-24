@@ -1,0 +1,178 @@
+.hero {
+    // positioning
+    position: relative;
+    text-align: center;
+    
+    // block model
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    height: 390px;
+    width: 100%;
+    
+    /*visual*/
+    background-image:
+        url(../img/intro-triangle.svg),
+        url(../img/photo-background@1x.jpg);
+    background-position: center bottom, center 0px;
+    background-repeat: no-repeat;
+    background-size: 768px, 768px;
+    
+    &--inner-page {
+        // block model
+        height: 158px;
+        
+        // visual
+        background-image:
+            url(../img/intro-triangle.svg),
+            url(../img/photo-background@1x.jpg);
+        background-position: center bottom, center -56px;
+        background-repeat: no-repeat;
+        background-size: 768px, 100%;
+        
+        & .hero__sedona {
+            // block model
+            width: 176px;
+            padding-top: 23px;
+        }
+    }
+    
+    &__caption {
+        display: none;
+    }
+    
+    &__welcome {
+        // block model
+        width: 144px;
+        padding-top: 42px;
+        
+        fill: #81b3d2;
+    }
+    
+    &__gorgeous {
+        // block model
+        width: 196px;
+        
+        fill: #766357;
+    }
+    
+    &__sedona {
+        // block model
+        width: 280px;
+        padding-top: 40px;
+        
+        fill: #ffffff;
+    }
+    
+    &__because {
+        // block model
+        width: 196px;
+        padding-top: 38px;
+        
+        fill: #ffffff;
+    }
+    
+    &__menu-button {
+        // positioning
+        position: absolute;
+        right: 20px;
+        top: -39px;
+        z-index: 1;
+        
+        // block model
+        height: 22px;
+        width: 23px;
+        
+        // visual
+        background-image: url(../img/icon-menu.svg);
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero {
+        height: 512px;
+        
+        &__welcome {
+            // block model
+            width: 190px;
+            padding-top: 76px;
+        }
+        
+        &__gorgeous {
+            // block model
+            width: 256px;
+            padding-top: 12px;
+        }
+
+        &__sedona {
+            // block model
+            width: 458px;
+            padding-top: 51px;
+        }
+        
+        &__because {
+            // block model
+            width: 296px;
+            padding-top: 54px;
+            margin-left: -13px;
+        }
+        
+        &--inner-page {
+            // block model
+            height: 290px;
+
+            // visual
+            background-image:
+                url(../img/intro-triangle.svg),
+                url(../img/photo-background@1x.jpg);
+            background-position: center bottom, center -180px;
+            background-repeat: no-repeat;
+            background-size: 768px, 100%;
+
+            & .hero__sedona {
+                // block model
+                width: 458px;
+                padding-top: 101px;
+            }
+        }
+        
+        &__menu-button {
+            // block model
+            display: none;
+        }
+    }
+    
+    @include addRetinaBackground;
+}
+
+@media (min-width: 1200px) {
+    .hero {
+        // block model
+        height: 507px;
+        
+        // visual
+        background-image:
+            url(../img/intro-triangle.svg),
+            url(../img/photo-background@1x.jpg);
+        background-position: center bottom, center -83px;
+        background-repeat: no-repeat;
+        background-size: 1200px, 100%;
+        
+        &--inner-page {
+            // block model
+            height: 300px;
+            
+            // visual
+            background-image:
+                url(../img/intro-triangle.svg),
+                url(../img/photo-background@1x.jpg);
+            background-position: center bottom, center -324px;
+            background-repeat: no-repeat;
+            background-size: 1200px, 100%;
+        }
+    }
+    
+    @include addRetinaBackground;
+}
