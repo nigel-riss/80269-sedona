@@ -1,6 +1,7 @@
 .main-menu {
     // positioning
     position: relative;
+	z-index: 2;
     
     &__list {
         // block model
@@ -138,7 +139,7 @@
             font-size: 14px;
             
             // visual
-            background: none;
+            background: transparent;
             border: none;
             
             &--last {

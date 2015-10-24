@@ -54,12 +54,33 @@
         
         &--sights {
             // block model
-            width: 280px;
+            width: 259px;
+			margin-bottom: -2px;
             
             // typography
             text-align: left;
             
         }
+		
+		&--devils-bridge {
+			// flex
+			order: 1;
+		}
+		
+		&--slide-park {
+			// flex
+			order: 3;
+		}
+		
+		&--bell-mount {
+			// flex
+			order: 2;
+		}
+		
+		&--red-rocks {
+			// flex
+			order: 4;
+		}
     }
 }
 
@@ -92,20 +113,9 @@
         
         &--sights {
             // block model
-            width: 450px;
-            
-            .form-label {
-                // block model
-                width: 220px;
-                display: inline-block;
-            }
-            
-            &:first-of-type {
-                // block model
-                padding-left: 0;
-                padding-right: 0;
-            }
-        }
+			width: auto;
+           
+		}
         
         &--traveler {
             // block model
