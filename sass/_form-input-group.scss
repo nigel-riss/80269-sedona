@@ -54,15 +54,11 @@
         
         &--sights {
             // block model
+            width: 280px;
             
             // typography
             text-align: left;
             
-            &:first-of-type {
-                // block model
-                padding-left: 4px;
-                padding-right: 68px;
-            }
         }
     }
 }

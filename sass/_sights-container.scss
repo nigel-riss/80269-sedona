@@ -1,0 +1,11 @@
+@media (min-width: 768px) {
+    .sights-container {
+        // block model
+        margin: 0 auto;
+        width: 600px;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+        background: red;
+    }
+}
