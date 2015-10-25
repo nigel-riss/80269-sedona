@@ -46,7 +46,7 @@
     .uploaded-photo {
         // block model
         margin-right: 65px;
-        padding-bottom: 68px;
+        padding-bottom: 32px;
 
         &__remove {
             // positioning
@@ -79,9 +79,11 @@
         &__name {
             // block model
             display: block;
+            padding-top: 16px;
 
             // typography
             font-size: 14px;
+            line-height: 20px;
         }
     }
 }
