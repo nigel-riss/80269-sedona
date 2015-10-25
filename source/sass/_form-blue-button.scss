@@ -1,0 +1,38 @@
+.form-blue-button {
+    // block model
+    display: block;
+    width: 100%;
+    border: none;
+
+    // typography
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 58px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    // visual
+    background-color: $colorMainBlue;
+
+    &:hover {
+        // visual
+        background-color: $colorHoverBlue;
+    }
+
+    &:active {
+        // typography
+        color: $colorPressBlueText;
+
+        // visual
+        background-color: $colorPressBlue;
+    }
+}
+
+@media (min-width: 768px) {
+    .form-blue-button {
+        // block model
+        width: 458px;
+        margin: 0 auto;
+    }
+}

@@ -1,8 +1,0 @@
-.form-text-field {
-    @include formInputStyles;
-    
-    &::placeholder {
-        // typography
-        color: #000000;
-    }
-}
