@@ -33,7 +33,7 @@ module.exports = function(grunt) {
         cmq: {
             style: {
                 files: {
-                    'css': ['build/css/style.css']
+                    'build/css': ['build/css/style.css']
                 }
             }
         },
@@ -102,7 +102,7 @@ module.exports = function(grunt) {
         }
     };
 
-    config = require('./.gosha')(grunt, config);
+    //config = require('./.gosha')(grunt, config);
 
     grunt.initConfig(config);
 
